@@ -1,0 +1,22 @@
+# Browsers that we support
+
+[development]
+last 1 version
+not dead
+not baidu > 0
+not ie > 0
+not kaios > 0
+not opera > 0
+not op_mob > 0
+not operamini all
+not and_qq > 0
+not and_uc > 0
+
+[production]
+> 0.1%
+not dead
+not ie > 0
+not opera > 0
+not op_mini all
+not and_qq > 0
+not and_uc > 0

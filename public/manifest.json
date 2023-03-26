@@ -1,0 +1,12 @@
+{
+    "name": "Neptune Mutual Challenge",
+    "short_name": "Neptune Challenge",
+    "theme_color": "#ffffff",
+    "background_color": "#004740",
+    "display": "standalone",
+    "orientation": "portrait",
+    "scope": "/",
+    "start_url": "/",
+    "icons": [],
+    "splash_pages": null
+}

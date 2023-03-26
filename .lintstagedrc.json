@@ -1,0 +1,11 @@
+{
+  "*.css": [
+    "stylelint --fix",
+    "git add"
+  ],
+  "*.{ts,tsx}": [
+    "prettier --write",
+    "eslint --fix",
+    "git add"
+  ]
+}

@@ -1,0 +1,113 @@
+{
+    "extends": [
+        "plugin:jest/recommended",
+        "plugin:jest/style",
+        "plugin:jest-formatting/recommended",
+        "plugin:@next/next/recommended",
+        "airbnb",
+        "airbnb-typescript",
+        "airbnb/hooks",
+        "plugin:react-prefer-function-component/recommended",
+        "prettier"
+    ],
+    "parser": "@typescript-eslint/parser",
+    "parserOptions": {
+        "project": "./tsconfig.json",
+        "sourceType": "module"
+    },
+    "plugins": [
+        "@typescript-eslint",
+        "import",
+        "jest",
+        "jest-formatting",
+        "react-prefer-function-component",
+        "react-hooks",
+        "prettier"
+    ],
+    "rules": {
+        "import/extensions": "off",
+        "arrow-body-style": [
+            "warn",
+            "always"
+        ],
+        "no-param-reassign": "off",
+        "class-methods-use-this": "off",
+        "no-underscore-dangle": [
+            "error",
+            {
+                "allow": [
+                    "_v"
+                ]
+            }
+        ],
+        "@typescript-eslint/interface-name-prefix": "off",
+        "@typescript-eslint/explicit-function-return-type": "off",
+        "@typescript-eslint/explicit-module-boundary-types": "off",
+        "@typescript-eslint/no-explicit-any": "off",
+        "no-console": "warn",
+        "curly": "warn",
+        "@typescript-eslint/no-unused-vars": "warn",
+        "import/order": "warn",
+        "@typescript-eslint/lines-between-class-members": "warn",
+        "array-element-newline": "off",
+        "import/prefer-default-export": "off",
+        "import/newline-after-import":"warn",
+        // #region Specific rules for this project
+        "react-hooks/exhaustive-deps": [
+            "warn",
+            {
+                "additionalHooks": "(useRecoilCallback|useRecoilTransaction_UNSTABLE)"
+            }
+        ],
+        "react/prop-types": "off",
+        "react/no-danger": "off",
+        "react/require-default-props": "off",
+        "react/function-component-definition": [
+            "error",
+            {
+                "namedComponents": [
+                    "arrow-function"
+                ],
+                "unnamedComponents": [
+                    "arrow-function"
+                ]
+            }
+        ],
+        "prettier/prettier": [
+            "warn",
+            {
+                "printWidth": 100,
+                "singleQuote": true,
+                "trailingComma": "all",
+                "arrowParens": "always",
+                "endOfLine": "lf",
+                "bracketSameLine": true,
+                "semi": true,
+                "jsxSingleQuote": false,
+                "singleAttributePerLine": true,
+                "plugins": [
+                    "./node_modules/prettier-plugin-sort-json",
+                    "./node_modules/prettier-plugin-packagejson",
+                    "./node_modules/prettier-plugin-multiline-arrays",
+                    "./node_modules/prettier-plugin-organize-imports",
+                    "./node_modules/prettier-plugin-jsdoc"
+                ]
+            }
+        ],
+        "react/jsx-filename-extension": [
+            "error",
+            {
+                "extensions": [
+                    ".tsx"
+                ]
+            }
+        ],
+        "react/react-in-jsx-scope": "off",
+        "react/jsx-props-no-spreading": "off",
+        "jsx-quotes": [
+            "warn",
+            "prefer-double"
+        ]
+        // #endregion
+    }
+}

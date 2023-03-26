@@ -1,0 +1,114 @@
+{
+  "files.eol": "\n",
+  "files.insertFinalNewline": true,
+  "files.autoSave": "afterDelay",
+  "files.exclude": {
+    "**/.vscode": true,
+    "**/.next": true,
+    "**/node_modules": true
+  },
+  "editor.codeActionsOnSave": {
+    "source.fixAll": true,
+    "source.organizeImports": true
+  },
+  "editor.formatOnPaste": true,
+  "editor.formatOnSave": true,
+  "editor.linkedEditing": true,
+  "css.validate": false,
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "git.autofetch": true,
+  "eslint.lintTask.enable": true,
+  "typescript.tsdk": "node_modules\\typescript\\lib",
+  "editor.autoClosingQuotes": "always",
+  "editor.quickSuggestions": {
+    "strings": true
+  },
+  "cSpell.words": [
+    "antd",
+    "clsx",
+    "commitlint",
+    "endregion",
+    "packagejson",
+    "Parens",
+    "Sider",
+    "Stylelint"
+  ],
+  "cSpell.language": "en-US",
+  "cSpell.enableFiletypes": [
+    "!asciidoc",
+    "!c",
+    "!cpp",
+    "!csharp",
+    "!go",
+    "!handlebars",
+    "!haskell",
+    "!jade",
+    "!java",
+    "!javascriptreact",
+    "!jupyter",
+    "!latex",
+    "!less",
+    "!php",
+    "!pug",
+    "!python",
+    "!restructuredtext",
+    "!rust",
+    "!scala",
+    "!scss",
+    "!swift",
+    "!vue",
+    "!tailwindcss",
+    "!makefile",
+    "!toml",
+    "graphql",
+    "dockercompose",
+    "dotenv",
+    "git-rebase",
+    "ignore",
+    "log",
+    "svg",
+    "typescript"
+  ],
+  "typescript.preferences.quoteStyle": "single",
+  "javascript.suggestionActions.enabled": false,
+  "todo-tree.general.automaticGitRefreshInterval": 60,
+  "todo-tree.general.tags": [
+    "BUG",
+    "FIX",
+    "TODO"
+  ],
+  "todo-tree.highlights.backgroundColourScheme": [
+    "red",
+    "orange",
+    "blue"
+  ],
+  "todo-tree.highlights.foregroundColourScheme": [
+    "white",
+    "white",
+    "white"
+  ],
+  "todo-tree.highlights.useColourScheme": true,
+  "todo-tree.filtering.excludeGlobs": [
+    "node_modules",
+    ".next"
+  ],
+  "git.repositoryScanIgnoredFolders": [
+    "node_modules",
+    ".next",
+    ".husky",
+    ".vscode",
+    ".next",
+    "typings",
+    "public",
+    "src"
+  ],
+  "git.autoStash": true,
+  "git.closeDiffOnOperation": true,
+  "git.enableSmartCommit": true,
+  "jest.autoRun": "off",
+  "emmet.showAbbreviationSuggestions": false,
+  "[markdown]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  }
+}

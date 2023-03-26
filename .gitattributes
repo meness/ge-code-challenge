@@ -1,0 +1,63 @@
+## GITATTRIBUTES FOR WEB PROJECTS
+#
+# These settings are for any web project.
+#
+# Details per file setting:
+#   text    These files should be normalized (i.e. convert CRLF to LF).
+#   binary  These files are binary and should be left untouched.
+#
+# Note that binary is a macro for -text -diff.
+######################################################################
+
+# Auto detect
+##   Handle line endings automatically for files detected as
+##   text and leave all files detected as binary untouched.
+##   This will handle all files NOT defined below.
+*                 text=auto
+
+# Source code
+*.css             text eol=lf
+*.html            text diff=html eol=lf
+*.js              text eol=lf
+*.json            text eol=lf
+*.scss            text diff=css eol=lf
+*.ts              text eol=lf
+*.tsx             text eol=lf
+
+# Docker
+Dockerfile        text eol=lf
+
+# Documentation
+*.md              text eol=lf
+
+# Configs
+.env              text eol=lf
+.gitattributes    text eol=lf
+*.lock            text -diff eol=lf
+package-lock.json text -diff eol=lf
+*.toml            text eol=lf
+*.yml             text eol=lf
+
+# Graphics
+*.ico             binary
+*.jpg             binary
+*.png             binary
+# SVG treated as an asset (binary) by default.
+*.svg             text eol=lf
+# If you want to treat it as binary,
+# use the following line instead.
+# *.svg           binary
+*.webp            binary
+
+# Fonts
+*.ttf             binary
+*.eot             binary
+*.otf             binary
+*.woff            binary
+*.woff2           binary
+
+# RC files (like .babelrc or .eslintrc)
+*.*rc             text eol=lf
+
+# Ignore files (like .npmignore or .gitignore)
+*.*ignore         text eol=lf
