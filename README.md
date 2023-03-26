@@ -1,4 +1,4 @@
-# ⚡ Challenges
+# ⚡ GE Challenge
 
 [Grassroots Economics](https://github.com/grassrootseconomics) challenged me with a challenging project, and this is my solution.
 
